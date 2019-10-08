@@ -1,0 +1,19 @@
+{
+  "name": "h9-site",
+  "version": "1.0.0",
+  "description": "Hold 9's site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexnortung/H9-site.git"
+  },
+  "author": "Alexnortung, IRLadderGoat, BakedPotato19",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alexnortung/H9-site/issues"
+  },
+  "homepage": "https://github.com/Alexnortung/H9-site#readme"
+}
