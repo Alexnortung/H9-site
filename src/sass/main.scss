@@ -1,0 +1,30 @@
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "./_variables.scss";
+
+.wrapper {
+  box-shadow: $block-shadow;
+  background-color: $top-color;
+  margin: 24px;
+  padding: 12px;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 3px;
+  background: $lul;
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+  &.btn-block {
+    box-shadow: $block-shadow;
+    &:hover {
+        transform: translate(7px, 7px);
+        box-shadow: 1px 1px 0px lighten($lul, 10%);
+      }
+    }
+  }

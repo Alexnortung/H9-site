@@ -1,0 +1,9 @@
+$top-color: #fff2c4;
+$lul: rgb(172, 40, 50);
+$block-shadow: 1px 1px 0px lighten($lul, 10%),
+               2px 2px 0px lighten($lul, 10%),
+               3px 3px 0px lighten($lul, 10%),
+               4px 4px 0px lighten($lul, 10%),
+               5px 5px 0px lighten($lul, 10%),
+               6px 6px 0px lighten($lul, 10%),
+               7px 7px 7px lighten($lul, 10%);
