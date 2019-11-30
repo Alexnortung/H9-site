@@ -4,27 +4,44 @@
 @import "../../node_modules/bulma/sass/elements/container.sass";
 @import "./_variables.scss";
 
-.wrapper {
-  box-shadow: $block-shadow;
-  background-color: $top-color;
-  margin: 24px;
-  padding: 12px;
+html {
+    height: 100%;
 }
 
-.btn {
-  border: none;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  padding: 1em 2em;
-  border-radius: 3px;
-  background: $lul;
-  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
-  &.btn-block {
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $body-background;
+}
+
+.wrapper {
     box-shadow: $block-shadow;
-    &:hover {
-        transform: translate(7px, 7px);
-        box-shadow: 1px 1px 0px lighten($lul, 10%);
-      }
+    background-color: $top-color;
+    margin: 2rem;
+    padding: 12px;
+}
+
+.button {
+    height: auto;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: $button-text;
+    padding: 0.8em 1.6em;
+    border-radius: 3px;
+    background: $lul;
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    font-weight: $weight-semibold;
+    &.button-block {
+        box-shadow: $block-shadow;
+        &:hover, &:active, &:focus {
+            color: $button-text;
+            transform: translate(7px, 7px);
+            box-shadow: 1px 1px 0px lighten($lul, 10%);
+        }
     }
-  }
+}
