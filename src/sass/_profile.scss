@@ -1,0 +1,29 @@
+.Profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.Profile {
+    padding: 0.9rem 0.6rem;
+    background-color: $primary;
+    width: 30%;
+    box-shadow: $block-shadow;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    color: $button-text;
+    font-family: Arial;
+
+    a {
+        &, &:hover, &:visited, &:active {
+            color: $button-text;
+        }
+    }
+}
+
+.Profile__name {
+    font-size: 18px;
+    font-weight: $weight-semibold
+
+}

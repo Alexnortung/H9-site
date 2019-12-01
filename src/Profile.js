@@ -15,7 +15,7 @@ class Profile extends Component {
                     {name}
                 </div>
                 <div>
-                    <a href={github.link}>Github profil</a>
+                    <a href={github.link}>Github profile</a>
                 </div>
             </div>
         )

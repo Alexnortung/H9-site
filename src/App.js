@@ -12,6 +12,12 @@ class App extends Component {
                         link: "https://github.com/Alexnortung"
                     },
                 },
+                {
+                    name: "Anders Kildemand", 
+                    github: {
+                        link: "https://github.com/gaprop"
+                    },
+                },
             ],
         }
     }
@@ -23,13 +29,15 @@ class App extends Component {
                     <button className="button button-block">Aaayy</button>
                 </div>
                 <div className="wrapper">
-                    {
-                        this.state.profiles.map((profile, i) => {
-                            return (
-                                <Profile profile={profile} key={i} />
-                            )
-                        })
-                    }
+                    <div className="Profile-wrapper">
+                        {
+                            this.state.profiles.map((profile, i) => {
+                                return (
+                                    <Profile profile={profile} key={i} />
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
         )
