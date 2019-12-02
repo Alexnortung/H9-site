@@ -1,6 +1,7 @@
 .Profile-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
@@ -8,16 +9,29 @@
 .Profile {
     padding: 0.9rem 0.6rem;
     background-color: $primary;
-    width: 30%;
+    // width: calc(33% - 14px);
+    flex-basis: calc(33% - 14px);
     box-shadow: $block-shadow;
-    margin-bottom: 7px;
-    margin-right: 7px;
+    margin-bottom: 13px;
     color: $button-text;
     font-family: Arial;
 
     a {
         &, &:hover, &:visited, &:active {
             color: $button-text;
+        }
+    }
+
+    @include mobile() {
+        flex-basis: 100%;
+        margin: 0 12px 12px;
+    }
+
+    &--hidden {
+        visibility: hidden;
+
+        @include mobile() {
+            display: none;
         }
     }
 }

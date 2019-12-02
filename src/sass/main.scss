@@ -5,6 +5,10 @@
 @import "./_variables.scss";
 @import "./_profile.scss";
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -24,6 +28,10 @@ body {
     background-color: $top-color;
     margin: 2rem;
     padding: 12px;
+
+    @include mobile() {
+        margin: 15px;
+    }
 }
 
 .button {

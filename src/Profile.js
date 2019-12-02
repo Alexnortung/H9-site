@@ -6,9 +6,14 @@ class Profile extends Component {
         this.props = props
     }
     render() {
-        const {profile} = this.props
-        const {github, name} = profile
+        const {profile, hidden} = this.props
+        if (hidden) {
+            return (
+                <div className="Profile Profile--hidden"></div>
+            )
+        }
 
+        const {github, name} = profile
         return (
             <div className="Profile">
                 <div className="Profile__name">

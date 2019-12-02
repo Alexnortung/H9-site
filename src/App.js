@@ -18,6 +18,24 @@ class App extends Component {
                         link: "https://github.com/gaprop"
                     },
                 },
+                {
+                    name: "test", 
+                    github: {
+                        link: "https://github.com/test"
+                    },
+                },
+                {
+                    name: "test", 
+                    github: {
+                        link: "https://github.com/test"
+                    },
+                },
+                {
+                    name: "test", 
+                    github: {
+                        link: "https://github.com/test"
+                    },
+                },
             ],
         }
     }
@@ -36,6 +54,9 @@ class App extends Component {
                                     <Profile profile={profile} key={i} />
                                 )
                             })
+                        }
+                        {
+                            [...Array((this.state.profiles.length - 1) % 3)].map((u,i) => <Profile hidden="true" key={this.state.profiles.length + i} />)
                         }
                     </div>
                 </div>
